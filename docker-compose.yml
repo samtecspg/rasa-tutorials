@@ -6,4 +6,10 @@ services:
     ports:
     - 5000:5000
     volumes:
-    - ./models:/usr/src/rasa_nlu/models
+    - ./models:/app/models
+  node-red:
+    image: samtecspg/node-red-tutorials
+    ports:
+    - 1880:1880
+    volumes:
+      - ./data:/data
