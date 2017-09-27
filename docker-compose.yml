@@ -9,6 +9,7 @@ services:
     - ./models:/app/models
   node-red:
     image: samtecspg/node-red-tutorials
+    user: '1000'
     ports:
     - 1880:1880
     volumes:
