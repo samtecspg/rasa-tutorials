@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
   rasa:
-    image: samtecspg/rasa-tutorials
+    image: samtecspg/rasa-tutorials:tensorflow
     ports:
     - 5000:5000
     volumes:
