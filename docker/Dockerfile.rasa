@@ -21,7 +21,7 @@ RUN pip install -r alt_requirements/requirements_tensorflow_sklearn.txt
 
 RUN pip install -e .
 
-RUN cp sample_configs/config_embedding.yml config.yml
+COPY docker/config.yml config.yml
 
 VOLUME ["/app/projects", "/app/logs", "/app/data"]
 
